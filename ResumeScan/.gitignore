@@ -1,22 +1,3 @@
-.vs/
-**/bin/
-**/obj/
-**/build/
-*.user
-*.suo
-*.pdb
-*.dll
-*.exe
-*.log
-*.dbmdl
-*.jfm
-
-appsettings.json
-appsettings.Local.json
-.env
-ResumeScanApi/EngineerDocuments/
-ResumeScanApi/*.csproj.Backup.tmp
-
 # Miscellaneous
 *.class
 *.log
@@ -65,4 +46,3 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
-ResumeScanDB/
