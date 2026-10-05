@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="ResumeScanApi/Application/ResumeScanApi.Application.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="ResumeScanApi/Domain/ResumeScanApi.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Database/ResumeScanApi.Database.sqlproj">
+      <Build />
+      <Deploy />
+    </Project>
+    <Project Path="ResumeScanApi/Infrastructure/ResumeScanApi.Infrastructure.csproj" />
+  </Folder>
+  <Project Path="ResumeScanApi/ResumeScanApi.csproj" />
+</Solution>
+

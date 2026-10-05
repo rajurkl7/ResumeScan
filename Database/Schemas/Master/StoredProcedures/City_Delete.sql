@@ -1,0 +1,11 @@
+CREATE PROCEDURE [Master].[City_Delete]
+	@CityId INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	DELETE FROM [Master].[City]
+	WHERE [CityId] = @CityId;
+
+	SELECT CONVERT(INT, @@ROWCOUNT);
+END;

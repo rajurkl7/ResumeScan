@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.Build.Sql/2.3.0">
+  <PropertyGroup>
+    <Name>ResumeScanApi.Database</Name>
+    <EnableDefaultSqlItems>false</EnableDefaultSqlItems>
+    <DefaultItemExcludes>$(DefaultItemExcludes);bin\**;obj\**</DefaultItemExcludes>
+    <TargetDatabaseName>ResumeScanDb</TargetDatabaseName>
+    <DacpacName>ResumeScanApi.Database</DacpacName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <BuildFromSSDT>false</BuildFromSSDT>
+    <SQLDBExtensionsRefPath />
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ProjectGuid>{b6a9cf58-d58a-7716-2be3-c27bd7789ad3}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Build Include="Schemas\Master.sql" />
+    <Build Include="Schemas\Customer.sql" />
+    <Build Include="Schemas\Engineer.sql" />
+    <Build Include="Schemas\Master\StoredProcedures\*.sql" />
+    <Build Include="Schemas\Customer\StoredProcedures\*.sql" />
+    <Build Include="Schemas\Engineer\StoredProcedures\*.sql" />
+    <Build Include="Schemas\Master\Tables\*.sql" />
+    <Build Include="Schemas\Customer\Tables\*.sql" />
+    <Build Include="Schemas\Engineer\Tables\*.sql" />
+    <Build Include="Schemas\Engineer\Tables\FieldServiceEngineerCapability.sql" />
+    <Build Include="Schemas\Engineer\Tables\FieldServiceEngineerDocument.sql" />
+    <Build Include="City.sql" />
+    <Build Include="City_Create.sql" />
+    <Build Include="City_GetAll.sql" />
+    <Build Include="City_GetById.sql" />
+    <Build Include="City_Update.sql" />
+    <Build Include="City_Delete.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Schemas\" />
+    <Folder Include="Schemas\Master" />
+    <Folder Include="Schemas\Customer" />
+    <Folder Include="Schemas\Engineer" />
+    <Folder Include="Schemas\Master\StoredProcedures" />
+    <Folder Include="Schemas\Master\Tables" />
+    <Folder Include="Schemas\Customer\Tables" />
+    <Folder Include="Schemas\Engineer\Tables" />
+    <Folder Include="Schemas\Customer\StoredProcedures" />
+    <Folder Include="Schemas\Engineer\StoredProcedures" />
+  </ItemGroup>
+</Project>

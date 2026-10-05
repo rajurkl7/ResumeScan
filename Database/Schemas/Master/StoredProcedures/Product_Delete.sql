@@ -1,0 +1,12 @@
+CREATE PROCEDURE [Master].[Product_Delete]
+	@Id INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	DELETE FROM [Master].[Products]
+	WHERE [Id] = @Id;
+
+	SELECT CONVERT(INT, @@ROWCOUNT);
+END;
+
