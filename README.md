@@ -1,3 +1,5 @@
+# ResumeScan
+
 # Resume Scan Product API
 
 ## Endpoints
@@ -22,7 +24,7 @@ Example response:
 {"success":true,"message":"Product created successfully.","data":{"id":1,"name":"Professional Resume Review","price":49.99,"quantity":10},"errors":null}
 ```
 
-Run `Database/Product.sql` against SQL Server, update the connection string, then start the API and open `/swagger`. Use the Swagger **Authorize** button with the configured username and password.
+Run the database project against SQL Server, update the connection string using `appsettings.example.json` as a template, then start the API and open `/swagger`. Use the Swagger **Authorize** button with the configured username and password.
 
 Engineer registration uploads document contents with the registration request. The API saves each file in the `EngineerDocuments` directory under its content root using a generated file name, and stores the relative path and file metadata in SQL Server. PDF, JPG, JPEG, and PNG files are accepted; each file is limited to 10 MB, with a 20 MB total limit per registration.
 

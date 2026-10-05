@@ -7,12 +7,12 @@
 *.pdb
 *.dll
 *.exe
+*.log
+*.dbmdl
+*.jfm
 
 appsettings.json
 appsettings.Local.json
 .env
-*.log
-*.dbmdl
-*.jfm
 ResumeScanApi/EngineerDocuments/
 ResumeScanApi/*.csproj.Backup.tmp
